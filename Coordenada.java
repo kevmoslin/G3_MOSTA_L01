@@ -33,4 +33,16 @@ public class Coordenada{
     double getY(){
         return y;
     }
+
+    double distancia(Coordenada c){
+
+    }
+
+    static double distancia(Coordenada c1, Coordenada c2){
+
+    }
+
+    String toString(){
+        
+    }
 }
