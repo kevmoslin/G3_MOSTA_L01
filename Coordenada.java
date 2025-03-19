@@ -17,4 +17,20 @@ public class Coordenada{
     public Coordenada(Coordenada c){
         this.c = c;
     }
+
+    void setX(double x){
+        this.x = x;
+    }
+
+    void setY(double y){
+        this.y = y;
+    }
+
+    double getX(){
+        return x;
+    }
+
+    double getY(){
+        return y;
+    }
 }
