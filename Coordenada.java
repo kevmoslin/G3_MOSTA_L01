@@ -14,5 +14,7 @@ public class Coordenada{
         this.y = y;
     }
 
-    public 
+    public Coordenada(Coordenada c){
+        this.c = c;
+    }
 }
