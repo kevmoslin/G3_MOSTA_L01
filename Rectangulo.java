@@ -25,4 +25,8 @@ public class Rectangulo{
     Coordenada setEsquina2(Coordenada c){
         this.esquina2 = c;
     }
+
+    public String toString(){
+        return "Rectangulo: [" + esquina1 + "," + esquina2 + "]";
+    }
 }
