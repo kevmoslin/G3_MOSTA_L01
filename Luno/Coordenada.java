@@ -37,7 +37,9 @@ public class Coordenada{
     }
 
     double distancia(Coordenada c){
-
+        double dx = this.x - c.getX();
+        double dy = this.y - c.getY();
+        return sqrtAproximado(dx * dx + dy * dy);
     }
 
     public static double distancia(Coordenada c1, Coordenada c2){
