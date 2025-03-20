@@ -15,7 +15,8 @@ public class Coordenada{
     }
 
     public Coordenada(Coordenada c){
-        this.c = c;
+        this.x = c.x;
+        this.y = c.y;
     }
 
     void setX(double x){
@@ -43,6 +44,6 @@ public class Coordenada{
     }
 
     String toString(){
-        
+        return "(" + this.x + "," + this.y + ")";
     }
 }
