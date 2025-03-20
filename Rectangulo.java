@@ -9,5 +9,19 @@ public class Rectangulo{
         setEsquina(c2);
     }
     
+    Coordenada getEsquina1(){
+        return this.esquina1;
+    }
 
+    Coordenada getEsquina2(){
+        return this.esquina2;
+    }
+
+    Coordenada setEsquina1(Coordenada c){
+        this.esquina1 = c;
+    }
+
+    Coordenada setEsquina2(Coordenada c){
+        this.esquina2 = c;
+    }
 }

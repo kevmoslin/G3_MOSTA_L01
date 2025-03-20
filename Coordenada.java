@@ -39,11 +39,11 @@ public class Coordenada{
 
     }
 
-    static double distancia(Coordenada c1, Coordenada c2){
+    public static double distancia(Coordenada c1, Coordenada c2){
 
     }
 
-    String toString(){
+    public String toString(){
         return "(" + this.x + "," + this.y + ")";
     }
 }
