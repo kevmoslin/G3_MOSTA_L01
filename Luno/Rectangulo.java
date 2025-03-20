@@ -19,11 +19,11 @@ public class Rectangulo{
         return this.esquina2;
     }
 
-    Coordenada setEsquina1(Coordenada c){
+    void setEsquina1(Coordenada c){
         this.esquina1 = c;
     }
 
-    Coordenada setEsquina2(Coordenada c){
+    void setEsquina2(Coordenada c){
         this.esquina2 = c;
     }
 

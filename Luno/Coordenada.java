@@ -1,5 +1,4 @@
 package Luno;
-import java.util.*;
 
 public class Coordenada{
     private double x;

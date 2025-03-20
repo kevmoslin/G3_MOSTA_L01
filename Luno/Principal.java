@@ -9,5 +9,7 @@ public class Principal{
 
         System.out.println(A);
         System.out.println(B);
+
+        System.out.println(Verificador.verificadorRectangulos(A, B));
     }
 }
