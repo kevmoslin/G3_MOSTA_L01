@@ -7,8 +7,8 @@ public class Rectangulo{
     private Coordenada esquina2;
 
     public Rectangulo(Coordenada c1, Coordenada c2){
-        setEsquina(c1);
-        setEsquina(c2);
+        this.esquina1 = c1;
+        this.esquina2 = c2;
     }
     
     Coordenada getEsquina1(){
