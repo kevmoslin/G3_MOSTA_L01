@@ -5,7 +5,7 @@ import Luno.Rectangulo;
 
 public class Principal{
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         double x1 = 0, y1 = 0, x2 = 0, y2 = 0, x3 = 0, y3 = 0, x4 = 0, y4 = 0;
 
         System.out.println("ingrese una esquina del primer recatangulo: ");
@@ -31,5 +31,7 @@ public class Principal{
         System.out.println(B);
 
         System.out.println(Verificador.verificadorRectangulos(A, B));
+
+        scanner.close();
     }
 }
