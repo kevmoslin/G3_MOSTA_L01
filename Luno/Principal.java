@@ -29,8 +29,14 @@ public class Principal{
 
         System.out.println(A);
         System.out.println(B);
+        String resultado = Verificador.verificadorRectangulos(A, B);
 
-        System.out.println(Verificador.verificadorRectangulos(A, B));
+        if (resultado.equals("los recatangulos estan sobrepuestos")) {
+            double areaInterseccion = Verificador.calcularAreaInterseccion(A, B);
+            System.out.println("area de interseccion: " + areaInterseccion);
+        }
+
+        System.out.println(resultado);
 
         scanner.close();
     }
