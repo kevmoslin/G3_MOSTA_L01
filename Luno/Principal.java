@@ -6,22 +6,23 @@ import Luno.Rectangulo;
 public class Principal{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
+        double x1 = 0, y1 = 0, x2 = 0, y2 = 0, x3 = 0, y3 = 0, x4 = 0, y4 = 0;
 
         System.out.println("ingrese una esquina del primer recatangulo: ");
-        double x1 = scan.nextDouble();
-        double y1 = scan.nextDouble();
+        x1 = scan.nextDouble();
+        y1 = scan.nextDouble();
 
         System.out.println("ingrese la otra esquina del primer recatangulo: ");
-        double x2 = scan.nextDouble();
-        double y2 = scan.nextDouble();
+        x2 = scan.nextDouble();
+        y2 = scan.nextDouble();
 
         System.out.println("ingrese una esquina del segundo rectangulo: ");
-        double x3 = scan.nextDouble();
-        double y3 = scan.nextDouble();
+        x3 = scan.nextDouble();
+        y3 = scan.nextDouble();
 
         System.out.println("ingrese otra esquina del segundo rectangulo: ");
-        double x4 = scan.nextDouble();
-        double y4 = scan.nextDouble();
+        x4 = scan.nextDouble();
+        y4 = scan.nextDouble();
         
         Rectangulo A = new Rectangulo(new Coordenada(x1, y1), new Coordenada(x2, y2));
         Rectangulo B = new Rectangulo(new Coordenada(x3, y3), new Coordenada(x4, y4));
