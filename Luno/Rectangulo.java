@@ -1,5 +1,6 @@
 package Luno;
 import java.util.*;
+import Luno.Coordenada;
 
 public class Rectangulo{
     private Coordenada esquina1;
