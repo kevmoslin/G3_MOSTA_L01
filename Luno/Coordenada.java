@@ -43,6 +43,17 @@ public class Coordenada{
     }
 
     public static double distancia(Coordenada c1, Coordenada c2){
+        double dx = c1.getX() - c2.getX();
+        double dy = c1.getY() - c2.getY();
+        return sqrtAproximado(dx * dx + dy * dy);
+    }
+
+    private static double sqrtAproximado(double num){
+        double x = num /2;
+        for (int i = 0; i < 10; i++){
+            x = (x + num / x ) / 2;
+        }
+        return x;
 
     }
 
