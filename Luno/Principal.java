@@ -1,5 +1,5 @@
 package Luno;
-import java.util.Scanner;
+import java.util.*;
 import Luno.Coordenada;
 import Luno.Rectangulo;
 
