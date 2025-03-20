@@ -1,4 +1,5 @@
 import java.util.*;
+import Coordenada;
 
 public class Rectangulo{
     private Coordenada esquina1;
