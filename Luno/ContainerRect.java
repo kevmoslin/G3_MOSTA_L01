@@ -36,11 +36,15 @@ public class ContainerRect {
         }
     }
 
-    private void mostrarRectangulos(){
+    @Override
+    private String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("rectangulo coordenadas distancia area \n");
         for(int i = 0; i < numRec; i++){
-            System.out.println("rectangulo " + (i + 1) + ": " + rectangulos[i]);
-            System.out.println("distancia Euclidiana " + distancias[i]);
-            System.out.println("area " + areas[i]);
+            sb.append((i + 1) + " (" + rectangulos[i].getEsquina1() + ", " + rectangulos[i].getEsquina2() + ") ");
+            sb.append(String.format("%.3f", distancias[i]) + " ");
+            sb.append(String.format("%.2f", areas[i]) + "\n");
         }
+        return sb.toString();
     }
 }
