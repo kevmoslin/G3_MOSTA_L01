@@ -23,11 +23,12 @@ public class ContainerRect {
         return Math.abs((r.getEsquina2().getX() - r.getEsquina1().getX()) * (r.getEsquina2().getY() - r.getEsquina1().getY()));
     }
 
-    public boolean agregarRectangulo(Rectangulo r){
+    public boolean addRectangulo(Rectangulo r){
         if (numRec < n) {
             rectangulos[numRec] = r;
             distancias[numRec] = calcularDistanciaEuclidiana(r);
             areas[numRec] = calcularArea(r);
+            numRec++;
             return true;
         } else {
             System.out.println("no se pueede agregar rectangulos");
