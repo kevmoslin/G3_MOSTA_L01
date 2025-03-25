@@ -15,5 +15,22 @@ public class ContainerRect {
         this.areas = new double[n];
     }
 
-    
+    public boolean agregarRectangulo(Rectangulo r){
+        if (numRec < n) {
+            rectangulos[numRec] = r;
+            distancias[numRec] = calcularDistanciaEuclidiana(r);
+            areas[numRec] = calcularArea(r);
+            return true;
+        } else {
+            System.out.println("no se pueede agregar rectangulos");
+            return false;
+        }
+    }
+    private void mostrarRectangulos(){
+        for(int i = 0; i < numRec; i++){
+            System.out.println("rectangulo " + (i + 1) + ": " + rectangulos[i]);
+            System.out.println("distancia Euclidiana " + distancias[i]);
+            System.out.println("area " + areas[i]);
+        }
+    }
 }
